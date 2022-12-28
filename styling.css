@@ -1,0 +1,135 @@
+/*styling.css*/
+/*center all elements and add background image*/
+body{
+    text-align: center;
+    background: url(images/paintbg.jpg) center center fixed;
+    background-size: cover;
+    font-family: "Sofia", sans-serif;
+}
+
+/*title*/
+#header{
+    background: #2259AA;;
+    height: 80px;
+    width: 500px;
+    margin: 10px auto;
+    font-size: 3em;
+    color: #fff;
+    line-height: 80px;
+}
+.Main_container{
+    min-height: 90vh;
+    width: 75%;
+    margin: 0 auto;
+    /* background-color: #5BB4E7; */
+}
+
+/*inputs container*/
+.inputContainer{
+    width: 200px;
+    margin: 0 auto;
+}
+
+/*color input, line thickness, slider*/
+.input{
+    height: 30px; 
+    font-size: 1.3em;
+}
+#slider{
+    margin: 10px auto;   
+}
+#circle{
+    height: 3px;  
+    width: 3px;
+    border-radius: 50%;
+    background: black;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+#thicknessInput{
+    position: relative;
+}
+
+/*canvas container*/
+#container{
+    width: 500px;
+    height: 400px;
+    border: 1px solid rgba(122,174,229,0.5);
+    margin: 10px auto;
+}
+#paint{
+    background-color: #fff;
+    cursor: crosshair;
+}
+
+/*inputs container*/
+.inputContainer2{
+    width: 399px;
+    margin: 0 auto;
+    background-color: blue;
+}
+
+/*erase.save and reset buttons*/
+.input2{
+    width: 133px;
+    color: #ffffff;
+    font-size: 1.3em;
+    float: left;
+}
+
+.button{
+    background: #2259AA;
+    height: 60px;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.button:hover{
+    color:  #2259AA;;
+    background: linear-gradient(white, rgba(67,169,228,0.9));
+    background: -webkit-linear-gradient(white, rgba(67,169,228,0.9));
+    background: -moz-linear-gradient(white, rgba(67,169,228,0.9));
+    background: -o-linear-gradient(white, rgba(67,169,228,0.9));
+    background: -ms-linear-gradient(white, rgba(67,169,228,0.9));
+}
+
+.button:active{
+    top: 4px;   
+}
+
+.eraseMode{
+    background-color: red;
+    color: white;
+}
+.footer{
+    width: 100%;
+    /* background-color: red; */
+    height: 8%;
+    bottom: 0px;
+    font-family: "Audiowide", sans-serif;
+    
+}
+a {
+    color: #2259AA;
+    text-decoration: none;
+
+}
+@media screen and (max-width: 780px) {
+    .Main_container {
+      width: 100%;
+    }
+    #header{
+        width: 300px;
+        font-size: 1.8em;
+    }
+  }
